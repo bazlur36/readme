@@ -1,0 +1,22 @@
+{
+  "name": "bazlur36/api-php",
+  "version": "0.0.1",
+  "description": "API for PHP",
+  "license": "MIT",
+  "keywords": ["api"],
+  "authors": [
+    {
+      "name": "Bazlur Rashid",
+      "email": "mailtobazlur@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ReadmeAPI\\": "src"
+    }
+  }
+}
