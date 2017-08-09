@@ -24,12 +24,11 @@ composer require bazlur36/api-php=dev-master
 ```
 
 ###Using without Composer
-1. Download the source code from https://github.com/bazlur36/readme <br />
-2. Extract and place the source code in the project root<br />
-3. Require the class by require in readme-master/src/Build.php";
+Download the Build.php file from https://github.com/bazlur36/readme/blob/master/src/Build.php and use as following
+
 ```php
 <?php
-require __DIR__ . '/readme-master/src/Build.php';
+require 'YOUR_PATH/Build.php';
     use ReadmeAPI\Build;
     
     $build = new Build();
