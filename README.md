@@ -2,24 +2,28 @@ This is a language-specific API client for [ReadMe Build](https://readme.build).
 
 # Installation
 
-*Here's how to install the package...*
-
-# Usage
-
-*Here's how you call it:*
-
+###Using with Composer
 ```php
-print("Hello!");
+composer require bazlur36/api-php=dev-master
 ```
 
-# Running tests
+# Usage
+```php
+<?php
+    require __DIR__ . '/vendor/autoload.php';
+    
+    use ReadmeAPI\Build;
+    
+    $build = new Build();
+    $build->config('abdul_f9cfcade4264cba870585a','');
+    $rp = $build->run('math','multiply',array('numbers' => array(1,2,3)));
+    
+    print_r($rp);
 
-*How do you run tests?*
+?>
+```
 
-# Deploying to the package manager
-
-*How is this deployed to a package manager?*
-
-# Credits
-
-  * Credit
+###Using without Composer
+1. Download the source code from https://github.com/bazlur36/readme <br />
+2. Extract and place the source code in the project root<br />
+3. Require the class by require_once('src/Build.php');
